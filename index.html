@@ -9,76 +9,82 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <div class="container">
+<body class="bg-grey-100 text-grey-800">
+  <div class="container mx-auto p-6">
 
-    <div class="header">
+    <div class="header flex flex-col md: flex-row justify-between items-center bg-blue-500  text-white p-6 rounded-lg shadow-md">
       <div>
-        <h2>Dariyabi Shaik</h2>
-        <p>Email: shaikdariyabi256@gmail.com | Phone: +91-9381424264</p>
-        <p><a href="https://www.linkedin.com/in/dariyabi-shaik" target="_blank">LinkedIn Profile</a></p>
+        <h2 class="text-2xl font-bold">Dariyabi Shaik</h2>
+        <p class="mt-2">Email: shaikdariyabi256@gmail.com | Phone: +91-9381424264</p>
+        <p class="mt-1"><a href="https://www.linkedin.com/in/dariyabi-shaik" target="_blank">LinkedIn Profile</a></p>
       </div>
       <div>
-        <ul class="nav">
-          <li class="bg-red-400">Home /</li>
-          <li class="bg-red-400">Projects /</li>
-          <li class="bg-red-400">Skills /</li>
-          <li class="bg-red-400">Contact</li>
+        <ul class="nav flex space-x-4 mt-4 md:mt-0">
+          <li class="hover:text-blue-300 cursor-pointer" >Home /</li>
+          <li class="hover:text-blue-300 cursor-pointer">Projects /</li>
+          <li class="hover:text-blue-300 cursor-pointer">Skills /</li>
+          <li class="hover:text-blue-300 cursor-pointer">Contact</li>
         </ul>
       </div>
     </div>
 
     
-    <div class="title">
-      <h1>Frontend Developer</h1>
-      <ul>
-        <li><strong>Skills:</strong></li>
-        <li>React</li>
-        <li>JavaScript</li>
-        <li>Redux</li>
-        <li>TypeScript</li>
-        <li>Tailwind CSS</li>
+    <div class="title text-center my-10">
+      <h1 class="text-4xl font-bold text-gray-900">Frontend Developer</h1>
+      <ul class="flex flex-wrap justify-center mt-4 gap-4 text-lg">
+        <li class="font-semibold">Skills:</li>
+        <li class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow">React</li>
+        <li class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow">JavaScript</li>
+        <li class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow">Redux</li>
+        <li class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow">TypeScript</li>
+        <li class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow">Tailwind CSS</li>
       </ul>
     </div>
+    
 
   
-    <div class="section">
+    <div class="section grid grid-cols-1 md:grid-cols-3 gap-6">
       
-      <div class="left">
-        <h2>Projects</h2>
-        <ul>
+      <div class="left bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold mb-4">Projects</h2>
+        <ul class="list-disc list-inside space-y-2">
           <li><strong>PlayAt:</strong> A sports ground booking app simplifying venue reservations.</li>
           <li><strong>Job Search Portal:</strong> A user-friendly platform for job seekers.</li>
         </ul>
       </div>
 
       
-      <div class="center">
-        <h2>Work Experience</h2>
+      <div class="center bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold mb-4">Work Experience</h2>
         <p><strong>Software Developer | Trangla Innovation Hyderabad</strong></p>
-        <p>Developed and maintained responsive web applications using React.js.</p>
+        <p class="mt-2">Developed and maintained responsive web applications using React.js.</p>
         <p>Implemented state management using Redux and optimized performance with techniques like lazy loading.</p>
-        <p><a href="https://github.com/shaikdariyabi/react-manipulation" target="_blank">GitHub Profile</a></p>
+        <p class="mt-4">
+          <a href="https://github.com/shaikdariyabi/react-manipulation" target="_blank" class="text-blue-500 underline">GitHub Profile</a>
+        </p>
       </div>
 
+
       
-      <div class="right">
-        <h2>Education</h2>
-        <p><strong>Bachelor of Computers Application</strong> - 2023 (85%)</p>
-        <p>Intermediate (CEC) - 2020 (75%)</p>
-        <p>SSC - 2018 (85%)</p>
+      <div class="right bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold mb-4">Education</h2>
+        <ul class="space-y-2 text-grey-800">
+          <li><strong class="text-gray-900">Bachelor of Computers Application</strong> - 2023 (85%)</li>
+          <li class="text-grey-900">Intermediate (CEC) - 2020 (75%)</li>
+          <li class="'text-gray-900">SSC - 2018 (85%)</li>
+        </ul>
       </div>
     </div>
 
     
-    <div class="footer">
-      <p><strong>Reviews from staff</strong></p>
-      <div class="f-content">
-        <div class="content">
+    <div class="footer bg-blue-500 text-white p-6 rounded-lg shadow-md mt-10">
+      <p class="text-center text-lg font-bold">Reviews from Staff</p>
+      <div class="f-content grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <div class="content bg-white text-gray-800 p-4 rounded-lg shadow">
           <p>She is a good Developer.</p>
-          <i>- kanisum, Assistant Professor</i>
+          <i>- Kanisum, Assistant Professor</i>
         </div>
-        <div class="content">
+        <div class="content bg-white text-gray-800 p-4 rounded-lg shadow">
           <p>Dariyabi demonstrated excellent problem-solving skills in complex projects.</p>
           <i>- Senior Developer</i>
         </div>
